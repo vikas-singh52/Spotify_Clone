@@ -1,0 +1,37 @@
+.div1{
+    width:300px;
+    height:150px;
+    background-color: blue;
+    position:relative;
+}
+.div2{
+    width:300px;
+    height:150px;
+    background-color: red;
+    position:absolte;
+    top:30px;
+    left:30px;
+
+}
+p{
+    margin:auto;
+}
+p:hover{
+    margin:auto;
+    cursor:pointer;
+    animation:toggle 5s linear 0s infinite;
+}
+@keyframes toggle {
+    0%{
+        transform: translate(80px,0px)
+    }
+    25%{
+        transform: translate(0px,80px)
+    }
+    50%{
+        transform: translate(-80px,0px)
+    }
+    100%{
+        transform: translate(0px,-80px)
+    }
+}
